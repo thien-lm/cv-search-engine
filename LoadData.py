@@ -55,7 +55,7 @@ job = docx2txt.process(r"C:\Users\ADMIN\Desktop\CVSearchEngine\python-job-descri
 # Load PDFs and store content and file names in a dictionary
 pdf_contents = load_pdfs(folder_path)
 
-vectorizer = CountVectorizer()
+vectorizer = TfidfVectorizer()
 count_matrix = vectorizer.fit_transform(contentlist)
 
 index = 0
